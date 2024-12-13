@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UIElements;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,9 +12,12 @@ public class PlayerController : MonoBehaviour
     public SpriteRenderer playerSprite;
     private float playerSpriteHalfWidth;
 
-
     public float rightScreenEdge;
     public float leftScreenEdge;
+
+    public Sprite santaRight;
+    public Sprite santaLeft;
+
 
 
     // Start is called before the first frame update
@@ -39,6 +44,11 @@ public class PlayerController : MonoBehaviour
 
             // Apply the movement to the player character's position, adjusted by the speed and deltaTime
             transform.position = Vector3.MoveTowards(currentPosition, newPosition, moveSpeed * Time.deltaTime);
+
+            //Change sprite of Santa
+            playerSprite.sprite = santaRight;
+
+       
         }
         else if (inputHl < 0 && transform.position.x > leftScreenEdge + playerSpriteHalfWidth)
         {
@@ -50,6 +60,10 @@ public class PlayerController : MonoBehaviour
             Vector3 newPosition = currentPosition - new Vector3(1f, 0f);
 
             transform.position = Vector3.MoveTowards(currentPosition, newPosition, moveSpeed * Time.deltaTime);
+
+            //Change Sprite of Santa
+            playerSprite.sprite = santaLeft;
+     
         }
     }
 
