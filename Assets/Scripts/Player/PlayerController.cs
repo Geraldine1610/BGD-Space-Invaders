@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     public Sprite santaRight;
     public Sprite santaLeft;
 
+    public AudioSource santaRightSFX;
+    public AudioSource santaLeftSFX;
 
 
     // Start is called before the first frame update
@@ -48,6 +50,9 @@ public class PlayerController : MonoBehaviour
             //Change sprite of Santa
             playerSprite.sprite = santaRight;
 
+            //Santa's footsteps
+            santaRightSFX.Play();
+
        
         }
         else if (inputHl < 0 && transform.position.x > leftScreenEdge + playerSpriteHalfWidth)
@@ -63,7 +68,10 @@ public class PlayerController : MonoBehaviour
 
             //Change Sprite of Santa
             playerSprite.sprite = santaLeft;
-     
+
+            //Santa's footsteps
+            santaLeftSFX.Play();
+
         }
     }
 
