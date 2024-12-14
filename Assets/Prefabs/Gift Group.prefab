@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2369062776193324066}
   - component: {fileID: 945954087}
   m_Layer: 0
-  m_Name: Enemy Group
+  m_Name: Gift Group
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
