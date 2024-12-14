@@ -19,8 +19,6 @@ public class Shooter : MonoBehaviour
     public float playerSpriteQuarterHeight = 0.9f;
     Vector3 projectilePosition;
 
-    public float direction;
-
     public float rightScreenEdge;
     public float leftScreenEdge;
     
