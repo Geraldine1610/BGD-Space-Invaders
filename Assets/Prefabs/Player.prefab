@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 831351284}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Santa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,6 +44,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -80,7 +82,7 @@ SpriteRenderer:
   m_Size: {x: 0.6, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &831351284
@@ -101,3 +103,7 @@ MonoBehaviour:
   playerSprite: {fileID: 5759382843955928417}
   rightScreenEdge: 0
   leftScreenEdge: 0
+  santaRight: {fileID: 0}
+  santaLeft: {fileID: 0}
+  santaRightSFX: {fileID: 0}
+  santaLeftSFX: {fileID: 0}
