@@ -62,7 +62,7 @@ public class GameController : MonoBehaviour
         if (giftCountTop == 0 && giftCountMid == 0 && giftCountBot == 0)
         {
             ShowRestartButton();
-            backgroundMusic.Stop();
+            //backgroundMusic.Stop();
         }
     }
 
@@ -78,8 +78,8 @@ public class GameController : MonoBehaviour
         playerPosition = 0;
 
         //Restart Background Music 
-        backgroundMusic.time = 0; // Reset playback position to the start
-        backgroundMusic.Play();
+        //backgroundMusic.time = 0; // Reset playback position to the start
+        //backgroundMusic.Play();
 
         //Reset gifts
         float startX = -6f; //starting X position of the left most gift
